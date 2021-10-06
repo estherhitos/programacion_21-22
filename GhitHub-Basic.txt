@@ -24,13 +24,12 @@ Actualiza el repositorio (desde local a GitHub)
 
 esther@esther-PC:~/MiRepositorio/MiRepositorio SSH
 
-git  --all
-git push --all
+git add --all
 git commit -m "actualización"
-maestro de origen de git push(git push origin master)
-git push origin master
+git push
+
 
 Actualiza el respositorio (desde GitHub a local)
-git pull --all
+git add --all
 git commit -m "actualización"
-git pull origin master
+git pull 
