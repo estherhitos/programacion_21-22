@@ -50,33 +50,38 @@ public class divisas {
 		int tipoMoneda = Integer.parseInt(System.console().readLine());
 		
 		System.out.println("Introduce la cantidad de dinero que quieres convertir");
-		euro = Double.parseDouble(System.console().readLine());
+		double cantidad = Double.parseDouble(System.console().readLine());
 		
-		
+		double factor = 1;
 		
 		switch (tipoMoneda){
 			case 1:
-			System.out.println("la cantidad de dinero es en euros "+euro);
-
+			break;
 			case 2:
-			euro =euroDolar;
-			dolar = euro * euroDolar;
+			factor =euroDolar;
+			break;
 			
 			case 3:
-			euro =euroLibra;
-			libra = euro * euroLibra;
+			factor =euroLibra;
+			break;
+			
 			case 4:
-			euro =euroYen;
-			yen = euro * euroYen;
+			factor =euroYen;
+			break;
 			
 			case 5:
-			euro =euroYuan;
-			 yuan = euro * euroYuan;
+			factor =euroYuan;
 			break;
 			
 			default:
 			}
-
+			cantidad = cantidad / factor;
+			euro = cantidad;
+			dolar = cantidad * euroDolar;
+			libra = cantidad * euroLibra;
+			yen = cantidad * euroYen;
+			yuan = cantidad * euroYuan;
+			System.out.printf("la cantidad de dinero introducido es en euros %.2f \n",euro);
 			System.out.printf("la cantidad de dinero introducido es en dolar %.2f \n",dolar);
 			System.out.printf("la cantidad de dinero introducido es en Libra %.2f \n",libra);
 			System.out.printf("la cantidad de dinero introducido es en Yen %.2f \n",yen);
