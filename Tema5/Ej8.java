@@ -3,7 +3,10 @@
  * 
 Muestra la tabla de multiplicar de un número introducido por teclado.
  * 
+ * <= menor o igual que
+ * >= mayor o igual que
  * 
+ * @Authora: Esther Hitos Garcia
  */
 
 
