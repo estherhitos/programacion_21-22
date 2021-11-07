@@ -23,7 +23,7 @@ serie: hasta donde queremos que llegue para hacerlo finito. En mi caso, lo pondr
  */
 
 
-public class Ej12 {
+public class Ej12Fibonacci {
 	
 	public static void main (String[] args) {
 		
