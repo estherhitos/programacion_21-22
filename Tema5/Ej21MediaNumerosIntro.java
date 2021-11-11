@@ -19,7 +19,7 @@ public class Ej21MediaNumerosIntro {
 		int sumaimpares=0;// almacenara la suma de todos los numeros imapares introducidos
 		float elemento=0;//sera el contador de indicara el numero de los numeros introducidos
 		float elementoimpar=0;//sera el contador de indicara el numero de los numeros introducidos impares
-		int sumapar=0;//almacenara la suma de todos los numeros pares introducidos
+		int Maxpar=0;//almacenara la suma de todos los numeros pares introducidos
 		
 		
 		do{
@@ -32,16 +32,15 @@ public class Ej21MediaNumerosIntro {
 					sumaimpares+= numeroIntroducido;
 					elementoimpar++;
 					}else{
-						if (numeroIntroducido >= sumapar) 
-							sumapar=numeroIntroducido;
+						if (numeroIntroducido >= Maxpar) //numero mas alto de pares
+							Maxpar=numeroIntroducido;
 						}
 					}
-				
 			}	while (numeroIntroducido>=0);//solo queremos positivos y 0
 
 				System.out.println("Ha introducido " + elemento + " números");
 				System.out.println("La media de los impares es " + sumaimpares/elementoimpar);
-				System.out.println("El máximo de los pares es " + sumapar);
+				System.out.println("El máximo de los pares es " + Maxpar);
 			
 	}
 }
