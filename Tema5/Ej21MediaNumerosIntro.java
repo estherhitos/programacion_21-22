@@ -8,6 +8,8 @@ indicar el final de la introducción de datos pero no se incluye en el cómputo.
  * 
  * <= menor o igual que
  * >= mayor o igual que
+ * 
+ * @Authora: Esther Hitos Garcia
  */
 
 
